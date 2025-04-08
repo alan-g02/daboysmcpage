@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required Mods - DaBoysMc Server</title>
+    <script src="mods-loader.js" defer></script>
+</head>
+<body>
+    <div style="display: flex; min-height: 100vh;">
+        <nav style="width: 250px; padding: 20px; background: #f0f0f0; position: sticky; top: 0; align-self: flex-start;">
+            <h2>DaBoysMc Guides</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><a href="main.html">Getting Started</a></li>
+                <li style="margin-bottom: 10px;"><a href="install-minecraft.html">Installing Minecraft</a></li>
+                <li style="margin-bottom: 10px;"><a href="install-forge.html">Installing Forge</a></li>
+                <li style="margin-bottom: 10px;"><a href="required-mods.html">Required Mods</a></li>
+                <li style="margin-bottom: 10px;"><a href="resource-packs.html">Resource Packs</a></li>
+            </ul>
+        </nav>
+
+        <main style="flex: 1; padding: 20px;">
+            <h1>Required Mods</h1>
+            <p>These mods are automatically listed from our GitHub repository:</p>
+            
+            <div id="mods-list">
+                <!-- Mods will be loaded here by JavaScript -->
+                <p>Loading mods...</p>
+            </div>
+            
+            <h2>Installation Instructions</h2>
+            <ol>
+                <li>Download all required mods from the list above</li>
+                <li>Place them in your <code>mods</code> folder</li>
+                <li>Launch Minecraft with Forge</li>
+            </ol>
+            
+            <div id="error-message" style="display: none; color: red; margin-top: 20px;">
+                Error loading mods. Please check the console for details or visit our 
+                <a href="mods-fallback.html">fallback mod list</a>.
+            </div>
+        </main>
+    </div>
+</body>
+</html>

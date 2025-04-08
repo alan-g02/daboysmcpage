@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaBoysMc Server Documentation</title>
+    <script src="resource-loader.js" defer></script>
+</head>
+<body>
+    <div style="display: flex; min-height: 100vh;">
+        <nav style="width: 250px; padding: 20px; background: #f0f0f0; position: sticky; top: 0; align-self: flex-start;">
+            <h2>DaBoysMc Guides</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;"><a href="main.html">Getting Started</a></li>
+                <li style="margin-bottom: 10px;"><a href="install-minecraft.html">Installing Minecraft</a></li>
+                <li style="margin-bottom: 10px;"><a href="install-forge.html">Installing Forge</a></li>
+                <li style="margin-bottom: 10px;"><a href="required-mods.html">Required Mods</a></li>
+                <li style="margin-bottom: 10px;"><a href="resource-packs.html">Resource Packs</a></li>
+            </ul>
+        </nav>
+
+        <main style="flex: 1; padding: 20px;">
+            <h1>Resource Packs</h1>
+            <a href="#mac_instructions">Mac Install Instructions shortcut</a>
+            <br>
+            <a href="#win_instructions">Windows Install Instructions shortcut</a>
+            <p>Quick downloads:</p>
+            
+            <div id="mods-list">
+                <!-- Mods will be loaded here by JavaScript -->
+                <p>Loading resource packs (will not load if empty or error)</p>
+            </div>
+            
+            <h2 id="mac_instructions">Installation Instructions Windows</h2>
+            <ol>
+                <li>Download all the missing resource packs from the list above</li>
+                <li>Press <code>Win + R</code></li>
+                <li>Type <code>%AppData%</code></li>
+                <li>Open <code>.minecraft</code></li>
+                <li>Open the <code>resourcepacks</code> folder.</li>
+                <li>Add the missing <code>.zip</code> files to the folder.</li>
+            </ol>
+
+            <h2 id="win_instructions">Installation Instructions mac</h2>
+            <ol>
+                <li>Download all the missing mods from the list above</li>
+                <li>Open Finder</li>
+                <li>Press <code>Command + Shift + G</code>. Go > Go to Folder in the menu bar.</li>
+                <li>Type <code>~/Library/Application Support/minecraft</code></li>
+                <li>Open the <code>resourcepacks</code> folder.</li>
+                <li>Add the missing <code>.zip</code> files to the folder.</li>
+            </ol>
+        </main>
+    </div>
+</body>
+</html>

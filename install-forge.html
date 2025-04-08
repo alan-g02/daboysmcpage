@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DaBoysMc Server Documentation</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Container -->
-    <div style="display: flex; min-height: 100vh;">
-        <!-- Side Navigation -->
-        <nav style="width: 250px; padding: 20px; background: #f0f0f0; position: sticky; top: 0; align-self: flex-start;">
-            <h2>DaBoysMc Guides</h2>
-            <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 10px;"><a href="main.html">Getting Started</a></li>
-                <li style="margin-bottom: 10px;"><a href="install-minecraft.html">Installing Minecraft</a></li>
-                <li style="margin-bottom: 10px;"><a href="install-forge.html">Installing Forge</a></li>
-                <li style="margin-bottom: 10px;"><a href="required-mods.html">Required Mods</a></li>
-                <li style="margin-bottom: 10px;"><a href="resource-packs.html">Resource Packs</a></li>
-            </ul>
-        </nav>
+    <div style="display: flex; min-height: 100vh">
+      <!-- Side Navigation -->
+      <nav
+        style="
+          width: 250px;
+          padding: 20px;
+          background: #f0f0f0;
+          position: sticky;
+          top: 0;
+          align-self: flex-start;
+        "
+      >
+        <h2>DaBoysMc Guides</h2>
+        <ul style="list-style: none; padding: 0">
+          <li style="margin-bottom: 10px">
+            <a href="main.html">Getting Started</a>
+          </li>
+          <li style="margin-bottom: 10px">
+            <a href="install-minecraft.html">Installing Minecraft</a>
+          </li>
+          <li style="margin-bottom: 10px">
+            <a href="install-forge.html">Installing Forge</a>
+          </li>
+          <li style="margin-bottom: 10px">
+            <a href="required-mods.html">Required Mods</a>
+          </li>
+          <li style="margin-bottom: 10px">
+            <a href="resource-packs.html">Resource Packs</a>
+          </li>
+        </ul>
+      </nav>
 
-        <!-- Main Content -->
-        <main style="flex: 1; padding: 20px;">
-            <!-- Content will be loaded from separate pages -->
-            <h1>Installing Forge</h1>
+      <!-- Main Content -->
+      <main style="flex: 1; padding: 20px">
+        <!-- Content will be loaded from separate pages -->
+        <h1>Installing Forge</h1>
+        <ol>
+          <li>For mac: Install the Oracle JDK</li>
+          <ol>
+            <li>For intel based macs: <a href="https://download.oracle.com/java/24/latest/jdk-24_macos-x64_bin.tar.gz">https://download.oracle.com/java/24/latest/jdk-24_macos-x64_bin.tar.gz</a></li>
+            <li>For silicon based macs: <a href="https://download.oracle.com/java/24/latest/jdk-24_macos-aarch64_bin.dmg">https://download.oracle.com/java/24/latest/jdk-24_macos-aarch64_bin.dmg</a></li>
+          </ol>
+          <li>
+            Download Forge installer from:
+            <a
+              href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html"
+            >
+              https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html
+            </a>
+            *! There will be an ads page, wait for 5 seconds and click skip!*
+          </li>
+
+          <li>Open the Forge installer (.jar file)</li>
+          <ol>
+            <li>Accept any security warnings</li>
+            <li>For mac: If apple denies opening:</li>
             <ol>
+              <li>Open System Settings</li>
+              <li>Go to privacy and security</li>
+              <li>Go to the security section</li>
               <li>
-                Download Forge installer from:
-                <a
-                  href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html"
-                >
-                https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html
-                </a>
+                If you opened the file, there will be a message,
+                "forge-1.20...taller.jar" was blocked to protect your Mac.
               </li>
-        
-              <li>Open the Forge installer (.jar file)</li>
-              <li>Accept any security warnings</li>
-              <li>
-                Install for "Client" (default option)
-                <br />
-                <img
-                  src="images/forge_installer.png"
-                  alt="Forge installer config example"
-                  width="300"
-                />
-              </li>
-              <li>Go back to Minecraft Launcher</li>
-              <li>Choose the new "Forge 1.20.1" profile from the dropdown</li>
-              <li>Click "Play" to launch</li>
-              <li>Your game is now ready for mods!</li>
+              <li>Click Open Anyway and authorize warnings.</li>
             </ol>
-        </main>
+          </ol>
+          <li>
+            Install for "Client" (default option)
+            <br />
+            <img
+              src="images/forge_installer.png"
+              alt="Forge installer config example"
+              width="300"
+            />
+          </li>
+          <li>Go back to Minecraft Launcher</li>
+          <li>Choose the new "Forge 1.20.1" profile from the dropdown</li>
+          <li>Click "Play" to launch</li>
+          <li>Your game is now ready for mods!</li>
+        </ol>
+      </main>
     </div>
-</body>
+  </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required Mods - DaBoysMc Server</title>
+    <title>DaBoysMc Server Documentation</title>
     <script src="mods-loader.js" defer></script>
 </head>
 <body>
@@ -21,24 +21,35 @@
 
         <main style="flex: 1; padding: 20px;">
             <h1>Required Mods</h1>
-            <p>These mods are automatically listed from our GitHub repository:</p>
+            <a href="#mac_instructions">Mac Install Instructions shortcut</a>
+            <br>
+            <a href="#win_instructions">Windows Install Instructions shortcut</a>
+            <p>Quick downloads:</p>
             
             <div id="mods-list">
                 <!-- Mods will be loaded here by JavaScript -->
-                <p>Loading mods...</p>
+                <p>Loading mods (will not load if empty or error)</p>
             </div>
             
-            <h2>Installation Instructions</h2>
+            <h2 id="mac_instructions">Installation Instructions Windows</h2>
             <ol>
-                <li>Download all required mods from the list above</li>
-                <li>Place them in your <code>mods</code> folder</li>
-                <li>Launch Minecraft with Forge</li>
+                <li>Download all the missing mods from the list above</li>
+                <li>Press <code>Win + R</code></li>
+                <li>Type <code>%AppData%</code></li>
+                <li>Open <code>.minecraft</code></li>
+                <li>Open the mods folder. Only available if minecraft forge version was previously played.</li>
+                <li>Add the missing <code>.jar</code> mod files to the folder.</li>
             </ol>
-            
-            <div id="error-message" style="display: none; color: red; margin-top: 20px;">
-                Error loading mods. Please check the console for details or visit our 
-                <a href="mods-fallback.html">fallback mod list</a>.
-            </div>
+
+            <h2 id="win_instructions">Installation Instructions mac</h2>
+            <ol>
+                <li>Download all the missing mods from the list above</li>
+                <li>Open Finder</li>
+                <li>Press <code>Command + Shift + G</code>. Go > Go to Folder in the menu bar.</li>
+                <li>Type <code>~/Library/Application Support/minecraft</code></li>
+                <li>Open the mods folder. Only available if minecraft forge version was previosly played.</li>
+                <li>Add the missing <code>.jar</code> mod files to the folder.</li>
+            </ol>
         </main>
     </div>
 </body>
